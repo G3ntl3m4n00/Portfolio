@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-line"></div>
+        <p class="loader-text">Loading</p>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">portfolio</a>
+            <button class="menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="creative.html" class="nav-link">Creative</a></li>
+                    <li><a href="code.html" class="nav-link">Code</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="line"><span>Creator</span></span>
+                        <span class="line"><span>&amp; Developer</span></span>
+                    </h1>
+                    <p class="hero-subtitle">Turning ideas into visual stories and functional solutions through design and code.</p>
+                    <div class="hero-scroll">
+                        <div class="hero-scroll-line"></div>
+                        <span class="hero-scroll-text">Scroll to explore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <p class="section-label">Selected Work</p>
+                    <h2 class="section-title">Creative</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item fade-in stagger-item">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd58fbe?w=600&h=450&fit=crop" alt="Abstract Design">
+                        <div class="portfolio-overlay">
+                            <h3>Abstract Series</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item fade-in stagger-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=450&fit=crop" alt="Photography">
+                        <div class="portfolio-overlay">
+                            <h3>Urban Landscapes</h3>
+                            <p>Photography</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item fade-in stagger-item">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=450&fit=crop" alt="Brand Design">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Design</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <p class="section-label">Featured</p>
+                    <h2 class="section-title">Code</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="code-grid">
+                    <article class="code-card fade-in stagger-item">
+                        <div class="code-card-header">
+                            <div class="code-icon">⚡</div>
+                            <h3>Project Alpha</h3>
+                        </div>
+                        <p>High-performance web application with real-time capabilities and responsive design.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <a href="code.html" class="code-link">
+                            View Project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="code-card fade-in stagger-item">
+                        <div class="code-card-header">
+                            <div class="code-icon">🎨</div>
+                            <h3>Design System</h3>
+                        </div>
+                        <p>Component library with accessible, reusable UI components and design tokens.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue</span>
+                            <span class="tech-tag">Storybook</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <a href="code.html" class="code-link">
+                            View Project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 — Built with intention</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
